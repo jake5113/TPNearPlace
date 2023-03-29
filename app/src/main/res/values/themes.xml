@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TPKaoSearchApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <!--SplashActivity에 적용할 테마 스타일-->
+    <style name="SplashTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- 배경 색상 -->
+<!--        <item name="android:windowBackground">@color/black</item>-->
+        <!--배경 이미지-->
+        <item name="android:windowBackground">@drawable/splash</item>
+        <!--상태표시줄 안보이게 -->
+        <item name="android:windowFullscreen">true</item>
+
+
+
+    </style>
+
+    <style name="Theme.TPKaoSearchApp" parent="Base.Theme.TPKaoSearchApp" />
+</resources>
