@@ -51,7 +51,7 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
 
     // Firebase core library
-//    platform("com.google.firebase:firebase-bom:31.3.0")
+    implementation(platform("com.google.firebase:firebase-bom:31.3.0"))
     // Firebase
-    implementation("com.google.firebase:firebase-firestore-ktx:24.4.4")
+    implementation("com.google.firebase:firebase-firestore-ktx")
 }
