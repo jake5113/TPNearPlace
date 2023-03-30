@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "446126725309",
+    "project_id": "tpkaosearchjake",
+    "storage_bucket": "tpkaosearchjake.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446126725309:android:4b0aec0edbe69a1045bfd4",
+        "android_client_info": {
+          "package_name": "com.jake5113.tpkaosearchapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446126725309-h0a732cqclceu981cpj1t4s9cki5oogt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_xnlqQ0tHArIl7WCYejGGLqoqB_Filz4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446126725309-h0a732cqclceu981cpj1t4s9cki5oogt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
