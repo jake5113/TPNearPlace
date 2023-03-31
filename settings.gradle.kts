@@ -10,6 +10,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+
+        // kakao sdk repository
+        maven ( url = "https://devrepo.kakao.com/nexus/content/groups/public/" )
     }
 }
 rootProject.name = "TPKaoSearchApp"

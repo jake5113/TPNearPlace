@@ -52,6 +52,14 @@ dependencies {
 
     // Firebase core library
     implementation(platform("com.google.firebase:firebase-bom:31.3.0"))
-    // Firebase
+    // Firebase product SDK
     implementation("com.google.firebase:firebase-firestore-ktx")
+
+    // Kakao Login Library
+    implementation("com.kakao.sdk:v2-user:2.13.0") // 카카오 로그인
+
+    // Google Login SDk
+    implementation("com.google.android.gms:play-services-auth:20.4.1")
+
+
 }
