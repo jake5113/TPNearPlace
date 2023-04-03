@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.com.android.application)
     alias(libs.plugins.org.jetbrains.kotlin.android)
+    id ("com.google.gms.google-services")
 }
 
 android {
@@ -33,6 +34,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    viewBinding{
+        enable = true
+    }
 }
 
 dependencies {
@@ -44,4 +49,25 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    // Retrofit Library
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.gson)
+    implementation(libs.converter.scalars)
+
+    // Firebase core library
+    implementation(platform("com.google.firebase:firebase-bom:31.3.0"))
+    // Firebase product SDK
+    implementation("com.google.firebase:firebase-firestore-ktx")
+
+    // Kakao Login Library
+    implementation(libs.v2.user) // 카카오 로그인
+
+    // Google Login SDk
+    implementation(libs.play.services.auth)
+
+    // Naver Login SDK
+    implementation(libs.oauth)
+
 }
