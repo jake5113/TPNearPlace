@@ -70,4 +70,6 @@ dependencies {
     // Naver Login SDK
     implementation(libs.oauth)
 
+    // Google Fused Location API
+    implementation(libs.play.services.location)
 }
