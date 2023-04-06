@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
-    <!--인터넷 사용 권한 설정-->
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <!--위치정보제공 퍼미션-->
+    <!-- 인터넷 사용 권한 설정 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 위치정보제공 퍼미션 -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
 
     <application
         android:name=".GlobalApplication"
@@ -20,7 +16,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TPKaoSearchApp"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".activities.PlaceUrlActivity"
+            android:exported="false" />
         <activity
             android:name=".activities.EmailSigninActivity"
             android:exported="false" />
@@ -43,20 +43,26 @@
         <activity
             android:name=".activities.MainActivity"
             android:exported="false" />
-
         <activity
             android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <!-- Redirect URI: "kakao${NATIVE_APP_KEY}://oauth" -->
-                <data android:host="oauth"
+                <data
+                    android:host="oauth"
                     android:scheme="kakaoc51728a42921c2fbb4ec0cd8a90c664e" />
             </intent-filter>
         </activity>
+
+        <!--kakao map App key 등록-->
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="c51728a42921c2fbb4ec0cd8a90c664e" />
 
     </application>
 

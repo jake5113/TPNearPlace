@@ -109,6 +109,8 @@ class MainActivity : AppCompatActivity() {
             requestMyLocation()
         }
 
+        binding.ivMyLocation.setOnClickListener { requestMyLocation() }
+
 
     }//onCreate method..
 
@@ -124,7 +126,6 @@ class MainActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
                 }
-
             })
 
 
