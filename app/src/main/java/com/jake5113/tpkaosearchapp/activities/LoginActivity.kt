@@ -185,10 +185,7 @@ class LoginActivity : AppCompatActivity() {
                         override fun onFailure(call: Call<NidUserInfoResponse>, t: Throwable) {
                             Toast.makeText(this@LoginActivity, "회원정보 불러오기 실패 : ${t.message}", Toast.LENGTH_SHORT).show()
                         }
-
                     })
-
-
             }
         })
     }
