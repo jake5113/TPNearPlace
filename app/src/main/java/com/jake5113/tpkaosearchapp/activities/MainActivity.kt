@@ -210,7 +210,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     // 멤버 변수(property)
-    var choiceID = R.id.choice_fastfood
+    var choiceID = R.id.choice_wc
 
     private fun clickChoice(view: View) {
         // 기존 선택되었던 버튼을 찾아 배경이미지를 흰색 원 그림으로 변경
