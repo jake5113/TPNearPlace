@@ -148,8 +148,6 @@ class MainActivity : AppCompatActivity() {
             return
         }
         providerClient.requestLocationUpdates(request, locationCallback, Looper.getMainLooper())
-
-
     }
 
     // 위치검색 결과 콜백객체
